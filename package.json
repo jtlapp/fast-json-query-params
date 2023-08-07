@@ -29,10 +29,8 @@
   },
   "scripts": {
     "clean": "rm -rf node_modules && rm -rf dist",
-    "build": "rm -rdf dist && tsc && tsc -p tsconfig.cjs.json && pnpm write-packages",
+    "build": "rm -rdf dist && tsc && tsc -p tsconfig.cjs.json && npm run write-packages",
     "write-packages": "echo '{\"type\":\"module\"}' > dist/esm/package.json && echo '{\"type\":\"commonjs\"}' > dist/cjs/package.json",
-    "build-docs": "typedoc --options ./typedoc.cjs ./src/index.ts",
-    "build-all": "pnpm build && pnpm build-docs",
     "test": "vitest --run"
   },
   "dependencies": {},
