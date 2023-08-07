@@ -4,6 +4,7 @@
     "target": "ES6",
     "module": "ESNext",
     "types": ["vitest/globals"],
+    "lib": ["ESNext"],
     "sourceMap": true,
     "composite": false,
     "declaration": true,
